@@ -1,0 +1,45 @@
+{
+  "pageHomeTitle": "Recetas",
+  "pageHomeDrawerHeader": "Recetas",
+  "pageHomeDrawerListTileSettings": "Ajustes",
+  "pageHomeRecipeAuthor": "por {name}",
+  "@pageHomeRecipeAuthor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pageHomeRecipeCreated": "creado {date}",
+  "@pageHomeRecipeCreated": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  },
+  "pageHomeRecipeVotes": "{count, plural, =1 {{count} voto} other {{count} votos}}",
+  "@pageHomeRecipeVotes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageHomeRecipeSaladName": "Ensalada",
+  "pageHomeRecipeSaladDescription": "Ensalada de verduras frescas llena de vitaminas, fibra y minerales.",
+  "pageHomeRecipeRiceName": "Arroz",
+  "pageHomeRecipeRiceDescription": "Arroz con verduras y frijoles. Una comida nutritiva alta en fibra.",
+  "pageHomeRecipeFriedEggsName": "Huevos fritos",
+  "pageHomeRecipeFriedEggsDescription": "Una comida llena de proteínas y minerales.",
+  "pageSettingsTitle": "Ajustes",
+  "pageSettingsInputLanguage": "{locale, select, ar {عربي} en {English} es {Español} other {-}}",
+  "@pageSettingsInputLanguage": {
+    "placeholders": {
+      "locale": {
+        "type": "String"
+      }
+    }
+  }
+}

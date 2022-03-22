@@ -1,0 +1,45 @@
+{
+  "pageHomeTitle": "وصفات",
+  "pageHomeDrawerHeader": "وصفات",
+  "pageHomeDrawerListTileSettings": "إعدادات",
+  "pageHomeRecipeAuthor": "بواسطة {name}",
+  "@pageHomeRecipeAuthor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pageHomeRecipeCreated": "خلقت {date}",
+  "@pageHomeRecipeCreated": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMd"
+      }
+    }
+  },
+  "pageHomeRecipeVotes": "{count, plural, =0 {لا يوجد تصويتات} =1 {صوت {count}} =2 {صوت {count}} few {أصوات {count}} many {أصوات {count}} other {صوت {count}}}",
+  "@pageHomeRecipeVotes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pageHomeRecipeSaladName": "سلطة",
+  "pageHomeRecipeSaladDescription": "سلطة خضار طازجة مليئة بالفيتامينات والألياف والمعادن.",
+  "pageHomeRecipeRiceName": "أرز",
+  "pageHomeRecipeRiceDescription": "أرز بالخضار والفاصوليا. وجبة مغذية غنية بالألياف.",
+  "pageHomeRecipeFriedEggsName": "البيض المقلي",
+  "pageHomeRecipeFriedEggsDescription": "وجبة غنية بالبروتينات والمعادن.",
+  "pageSettingsTitle": "إعدادات",
+  "pageSettingsInputLanguage": "{locale, select, ar {عربي} en {English} es {Español} other {-}}",
+  "@pageSettingsInputLanguage": {
+    "placeholders": {
+      "locale": {
+        "type": "String"
+      }
+    }
+  }
+}
