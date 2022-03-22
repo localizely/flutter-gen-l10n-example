@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 
-class Settings extends StatefulWidget {
+import '../model/locale.dart';
+
+class Settings extends StatelessWidget {
   const Settings({Key? key}) : super(key: key);
-
-  @override
-  State<StatefulWidget> createState() {
-    return _SettingsState();
-  }
-}
-
-class _SettingsState extends State<Settings> {
-  String selectedLanguage = "en";
 
   @override
   Widget build(BuildContext context) {
     var t = AppLocalizations.of(context)!;
+
+    var selectedLocale = Localizations.localeOf(context).toString();
 
     return Scaffold(
       appBar: AppBar(
@@ -24,8 +20,9 @@ class _SettingsState extends State<Settings> {
       body: Center(
         child: Column(
           children: [
-            DropdownButton(
-                value: selectedLanguage,
+            Consumer<LocaleModel>(
+              builder: (context, localeModel, child) => DropdownButton(
+                value: selectedLocale,
                 items: [
                   DropdownMenuItem(
                     child: Text(t.pageSettingsInputLanguage("en")),
@@ -40,11 +37,13 @@ class _SettingsState extends State<Settings> {
                     value: "ar",
                   ),
                 ],
-                onChanged: (String? language) {
-                  setState(() {
-                    selectedLanguage = language!;
-                  });
-                })
+                onChanged: (String? value) {
+                  if (value != null) {
+                    localeModel.set(Locale(value));
+                  }
+                },
+              ),
+            ),
           ],
         ),
       ),
