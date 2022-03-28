@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
           children: [
             DrawerHeader(
               decoration: const BoxDecoration(
-                color: Colors.orange,
+                color: Colors.purple,
               ),
               child: Text(
                 t.pageHomeDrawerHeader,

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         builder: (context, localeModel, child) => MaterialApp(
           title: 'Recipes',
           theme: ThemeData(
-            primarySwatch: Colors.orange,
+            primarySwatch: Colors.purple,
           ),
           localizationsDelegates: AppLocalizations.localizationsDelegates,
           supportedLocales: AppLocalizations.supportedLocales,
