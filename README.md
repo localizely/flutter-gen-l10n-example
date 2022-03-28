@@ -9,6 +9,6 @@ It contains examples for:
 - Language switcher
 - RTL handling
 
-For more details, check out the full article: [Flutter localization: step-by-step](http://localhost:3000/blog/flutter-localization-step-by-step/?tab=using-gen-l10n)
+For more details, check out the full article: [Flutter localization: step-by-step](https://localizely.com/blog/flutter-localization-step-by-step/?tab=using-gen-l10n)
 
 ![demo](./demo.gif)
