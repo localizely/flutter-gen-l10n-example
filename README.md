@@ -1,16 +1,14 @@
-# flutter_gen_l10n_example
+# Flutter gen_l10n example
 
-A new Flutter project.
+This example shows how to localize your Flutter apps with the `gen_l10n` tool.
 
-## Getting Started
+It contains examples for:
 
-This project is a starting point for a Flutter application.
+- The `gen_l10n` configuration.
+- Different kinds of messages (plain messages, ICU messages, etc.).
+- Language switcher
+- RTL handling
 
-A few resources to get you started if this is your first Flutter project:
+For more details, check out the full article: [Flutter localization: step-by-step](http://localhost:3000/blog/flutter-localization-step-by-step/?tab=using-gen-l10n)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![demo](./demo.gif)
