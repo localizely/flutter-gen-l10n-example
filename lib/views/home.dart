@@ -56,13 +56,13 @@ class Home extends StatelessWidget {
               ),
               child: Text(
                 t.pageHomeDrawerHeader,
-                style: theme.textTheme.headline4,
+                style: theme.textTheme.headlineMedium,
               ),
             ),
             ListTile(
               title: Text(
                 t.pageHomeDrawerListTileSettings,
-                style: theme.textTheme.subtitle1,
+                style: theme.textTheme.titleMedium,
               ),
               onTap: () {
                 Navigator.pushNamed(
