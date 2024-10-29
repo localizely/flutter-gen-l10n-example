@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../model/locale.dart';
 
 class Settings extends StatelessWidget {
-  const Settings({Key? key}) : super(key: key);
+  const Settings({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,16 +25,16 @@ class Settings extends StatelessWidget {
                 value: selectedLocale,
                 items: [
                   DropdownMenuItem(
-                    child: Text(t.pageSettingsInputLanguage("en")),
                     value: "en",
+                    child: Text(t.pageSettingsInputLanguage("en")),
                   ),
                   DropdownMenuItem(
-                    child: Text(t.pageSettingsInputLanguage("es")),
                     value: "es",
+                    child: Text(t.pageSettingsInputLanguage("es")),
                   ),
                   DropdownMenuItem(
-                    child: Text(t.pageSettingsInputLanguage("ar")),
                     value: "ar",
+                    child: Text(t.pageSettingsInputLanguage("ar")),
                   ),
                 ],
                 onChanged: (String? value) {

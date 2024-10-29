@@ -9,14 +9,13 @@ class RecipeCard extends StatelessWidget {
   final String votes;
 
   const RecipeCard(
-      {Key? key,
+      {super.key,
       required this.image,
       required this.name,
       required this.description,
       required this.author,
       required this.created,
-      required this.votes})
-      : super(key: key);
+      required this.votes});
 
   @override
   Widget build(BuildContext context) {
