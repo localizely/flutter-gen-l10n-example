@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../l10n/generated/app_localizations.dart';
 import '../widgets/recipe_card.dart';
 
 class Home extends StatelessWidget {
@@ -12,9 +12,7 @@ class Home extends StatelessWidget {
     var theme = Theme.of(context);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(t.pageHomeTitle),
-      ),
+      appBar: AppBar(title: Text(t.pageHomeTitle)),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -51,9 +49,7 @@ class Home extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             DrawerHeader(
-              decoration: const BoxDecoration(
-                color: Colors.purple,
-              ),
+              decoration: const BoxDecoration(color: Colors.purple),
               child: Text(
                 t.pageHomeDrawerHeader,
                 style: theme.textTheme.headlineMedium,
@@ -65,12 +61,9 @@ class Home extends StatelessWidget {
                 style: theme.textTheme.titleMedium,
               ),
               onTap: () {
-                Navigator.pushNamed(
-                  context,
-                  '/settings',
-                );
+                Navigator.pushNamed(context, '/settings');
               },
-            )
+            ),
           ],
         ),
       ),

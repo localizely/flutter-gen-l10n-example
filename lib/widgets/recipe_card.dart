@@ -8,14 +8,15 @@ class RecipeCard extends StatelessWidget {
   final String created;
   final String votes;
 
-  const RecipeCard(
-      {super.key,
-      required this.image,
-      required this.name,
-      required this.description,
-      required this.author,
-      required this.created,
-      required this.votes});
+  const RecipeCard({
+    super.key,
+    required this.image,
+    required this.name,
+    required this.description,
+    required this.author,
+    required this.created,
+    required this.votes,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +26,7 @@ class RecipeCard extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
-              image,
-              width: 180,
-              height: 134,
-            ),
+            Image.asset(image, width: 180, height: 134),
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(8),
@@ -45,18 +42,9 @@ class RecipeCard extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
                     const SizedBox(height: 10),
-                    Text(
-                      author,
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                    Text(
-                      created,
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
-                    Text(
-                      votes,
-                      style: Theme.of(context).textTheme.bodySmall,
-                    ),
+                    Text(author, style: Theme.of(context).textTheme.bodySmall),
+                    Text(created, style: Theme.of(context).textTheme.bodySmall),
+                    Text(votes, style: Theme.of(context).textTheme.bodySmall),
                   ],
                 ),
               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
+
+import 'l10n/generated/app_localizations.dart';
 
 import 'views/home.dart';
 import 'views/settings.dart';
@@ -19,20 +20,21 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => LocaleModel(),
       child: Consumer<LocaleModel>(
-        builder: (context, localeModel, child) => MaterialApp(
-          title: 'Recipes',
-          theme: ThemeData(
-            primarySwatch: Colors.purple,
-          ),
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
-          supportedLocales: AppLocalizations.supportedLocales,
-          locale: localeModel.locale,
-          routes: {
-            '/': (context) => const Home(),
-            '/settings': (context) => const Settings(),
-          },
-          initialRoute: '/',
-        ),
+        builder:
+            (context, localeModel, child) => MaterialApp(
+              title: 'Recipes',
+              theme: ThemeData(
+                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+              ),
+              localizationsDelegates: AppLocalizations.localizationsDelegates,
+              supportedLocales: AppLocalizations.supportedLocales,
+              locale: localeModel.locale,
+              routes: {
+                '/': (context) => const Home(),
+                '/settings': (context) => const Settings(),
+              },
+              initialRoute: '/',
+            ),
       ),
     );
   }
